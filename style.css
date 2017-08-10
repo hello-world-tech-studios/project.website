@@ -1,0 +1,40 @@
+.pic{
+    display: block;
+    margin: auto;
+    width: 20%;
+
+}
+h1{
+  text-align: center;
+  font-size:80px;
+}
+body{
+  background-image: url("http://orig03.deviantart.net/c7a3/f/2012/258/9/1/ani_rainbow_by_engineerjr-d5et1sk.gif");
+}
+.header{
+  width:1000;
+  height:700px;
+  background-color: white;
+}
+.real{
+  background-color: #ff5ede;
+  width:850px;
+  height:800px;
+  margin-top: 20px;
+  color:white;
+}
+.furry{
+  margin-left: 175px;
+  margin-right: 175px;
+  margin-top: 10px;
+  width:500px;
+}
+.relate{
+  width:300px;
+  margin: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#rhino{
+  height:312px;
+}
