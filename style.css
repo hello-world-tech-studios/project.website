@@ -1,0 +1,15 @@
+h1 {
+  color: red;
+  font-size: 36px;
+}
+
+.aTag1 {
+  color: red;
+  background-color: blue;
+  text-decoration: none;
+  padding: 5px;
+}
+
+#catFacts:hover {
+  color: white;
+}
