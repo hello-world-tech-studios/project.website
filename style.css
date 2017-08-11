@@ -59,6 +59,7 @@ body{
   margin-left: 50px;
   margin-top: 20px;
   color:white;
+  font-size: 20px;
 }
 
 .container {
@@ -74,6 +75,7 @@ body{
   margin-left: 50px;
   margin-top: 20px;
   color:white;
+  font-size: 60px;
 }
 a{
   color:yellow;
@@ -92,4 +94,8 @@ a{
 }
 .hh{
   font-size: 30px;
+}
+#u{
+  width:200px;
+  margin-left: 290px;
 }
