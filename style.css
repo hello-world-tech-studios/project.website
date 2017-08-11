@@ -17,3 +17,62 @@
   margin-top: 100px;
 
 }
+.salad{
+  width:200px;
+}
+.chicken{
+  width:200px;
+}
+.ramune{
+  width:200px;
+}
+.taco{
+  width:200px;
+}
+.scall{
+  width:200px;
+}
+.rice{
+  width:200px;
+}
+.fries{
+  width:200px;
+
+}
+#app{
+  font-family: cursive;
+}
+#drink{
+  font-family: Impact;
+}
+#entrees{
+  font-family: cursive;
+}
+#sides{
+  font-family: impact;
+}
+#special{
+  font-family: cursive;
+}
+#mac{
+  width:250px;
+  height: 200px;
+}
+#dez{
+  font-family: impact;
+}
+.cake{
+  width:200px;
+}
+.choco{
+  width:200px;
+}
+#credits{
+  font-family: monospace;
+}
+#cred{
+  font-family: fantasy;
+}
+body{
+  background: linear-gradient(to right, #435787, #34772f);
+}

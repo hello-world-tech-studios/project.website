@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- BOOTSTRAP  -->
     <!-- Latest compiled and minified CSS -->
@@ -21,36 +23,166 @@
 
     <div class="container">
       <div class="row appetizers">
-        <div class="col-xs-12 col-md-6">
-          <h3>Appetizers</h3>
+
+        <div class="col-xs-12 col-md-3">
+          <img class="salad" src="http://entomofarms.com/wp-content/uploads/2016/04/EF-caesar-salad-cricket-powder.jpg"alt="Caesar Salad">
+          <img class="chicken" src="https://1.bp.blogspot.com/-wUNxg_8CAbc/WD-RxkK1ztI/AAAAAAAAB08/vYrWEUWA6y09G7HasiMJv4c4mOTqEJJqgCLcB/s1600/Chicken%2BLollipop%2BRecipe.JPG"alt="Lollipop chicken">
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <h3 id="app">Appetizers</h3>
           <h5> Casesar Salad</h5>
           <p>Romaine lettuce tossed with an olive oil dressing, a coddled<br>
           egg, garlic, and grated cheese topped with croutons.<br>
         //Thousand island or ranch dressing//</p>
-        </div>
+
+          <h5>Momos</h5>
+          <p>Small dumplings with a touch of curry inside.</p>
+          <h5>Samosas</h5>
+          <p>Indian style fried samosas.<br>
+          //pototatoes, peas, onions, spices, peppers, and your choice of meat//</p>
+          <h5>Pan-seared Foie Gras</h5>
+          <h5>Ginger spiced brussel sprouts</h5>
+          <p>Roasted brussel sprouts with a pinch of spice</p>
+          <h5>Grilled Cauliflower</h5>
+          <p>Grilled cauliflower with salt and pepper</p>
+          <h5>Grilled Shishito Peppers</h5>
+          <h5>Lollipop Chicken</h5>
+          <p>Frenched chicken winglet, meat cut loose from the bone.<br>
+          //Served hot with Szechuan sauce//</p>
       </div>
+
+      <div class="col-xs-12 col-md-3">
+        <h3 id="drink">Drinks</h3>
+        <h4>Soda</h4>
+        <p>Coca-Cola//Pepsi//Sprite//Lemonade<br>//Fanta Orange//Root Beer//
+        Italian Soda//Lassi//Chinese salt soda water//</p>
+        <h5>Milk or Water</h5>
+        <h5>Thai Iced Tea</h5>
+        <h5>Bubble tea</h5>
+        <h5>Ramune soda</h5>
+        <h5>Topo Chico</h5>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <img class="ramune"src="https://images-na.ssl-images-amazon.com/images/I/91Ew0q-29%2BL._SX522_.jpg"alt="Ramune soda">
+        <img class="coke"src="data:image/png;base64,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"alt="Coke">
+      </div>
+
+
+
+
+      </div>
+
+      <div class="row appetizers">
+
+        <div class="col-xs-12 col-md-3">
+          <img class="taco" src="https://i.ytimg.com/vi/-0zlvCKgHJE/hqdefault.jpg"alt="Street Tacos">
+          <img class="scall"src="http://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18144951/fc50qd002-02-main.jpg"alt="Scallops">
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <h3 id="entrees">Entrees</h3>
+          <h5> Curry Bowl</h5>
+          <p>Indian style broth w/ chicken and a pinch of chili sauce.</p>
+
+          <h5>Porkbelly Street Tacos</h5>
+          <h5>Korean-style Spaghetti</h5>
+          <p>Sweet and savory w/ a hint of spice.</p>
+          <h5>Meatlover Flatbread</h5>
+          <p>//Canadian bacon, bacon, ham, sausage, pepperoni, cheese,<br>
+          and sauce//</p>
+          <h5>Garden lover Flatbread</h5>
+          <p>//Olive, tomato, onion, spinach, bell pepper, and sauce//</p>
+          <h5>Steamed Fresh Oysters</h5>
+          <p>//Choice of ginger scallions or black bean sauce//</p>
+          <h5>Plum Sauce Fish Hot Pot(Seabass)</h5>
+          <h5>Pan-seared Scallops</h5>
+
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <h3 id="sides">Sides</h3>
+        <h5>Saffron Naan</h5>
+        <h5>Fried Rice</h5>
+        <h5>Fried Okra</h5>
+        <h5>Steak Mushrooms</h5>
+        <h5>Truffle Fries</h5>
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <img class="rice"src="http://www.pbs.org/food/wp-content/blogs.dir/2/files/2012/11/curry-fried-rice-1.jpg"alt="Fried Rice">
+        <img class="fries"src="http://cdn.justalittlebitofbacon.com/wp-content/uploads/2016/08/truffled-fries-4.jpg"alt="Truffle Fries">
+      </div>
+
+
+
+
+      </div>
+
+
+      <div class="row appetizers">
+
+        <div class="col-xs-12 col-md-3">
+
+          <img id="mac"src="http://www.recipeboy.com/wp-content/uploads/2012/11/Skillet-Macaroni-and-Cheese-1.jpg"alt="Mac and Cheese">
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <h3 id="special">Specialties</h3>
+          <h5>**Lobster Cocktail**</h5>
+          <h5>**ZBurger**</h5>
+          <p>//Local organic grass-fed beef, cheddar cheese, avacado, onions,<br>
+          and bacon//</p>
+          <h5>**Lobster Mac 'N Cheese**</h5>
+          <p>Maccoroni with cheese and breadcrumb coating with fresh<br>
+          lobster.</p>
+
+
+      </div>
+
+      <div class="col-xs-12 col-md-3">
+        <h3 id="dez">Desserts</h3>
+        <h5>New York style Cheesecake</h5>
+        <h5>Classic Key-lime Pie</h5>
+        <h5>Chocolate Mousse Cake</h5>
+        <h5>Tiramasu</h5>
+        <h5>Fried Ice Cream</h5>
+        <h5>Creme Brulee</h5>
+        </div>
+
+      <div class="col-xs-12 col-md-3">
+        <img class="cake"src="http://brightcove.vo.llnwd.net/d22/unsecured/media/1033249144001/1033249144001_1553878959001_ari-origin05-arc-166-1333990820814.jpg?pubId=1033249144001"alt="Cheesecake">
+        <img class="choco"src="http://cookdiary.net/wp-content/uploads/images/Chocolate-Mousse-Cake_8170.jpg"alt="Truffle Fries">
+      </div>
+
+      <h2 id="credits"><center>Credits</center></h2>
+      <div id="cred">
+      <p><center>GOOGLE<br>
+        My Mom //Helping me with almost all of my food ideas//<br>
+        My Sister //Helping me with some ideas//<br>
+        Jed // Helping me through making the website//<br>
+        Jon //Helping me with a lot of the website, including the Bootstrap//<br>
+        Atom //Idea for background//
+        <center></p>
+        </div>
+
+        <h1 class="z"><center>Z<center></h1>
+          <center class="border">Fusion Restaurant<center>
+
+
+
+
+
+      </div>
+
+
     </div>
 
-    <div class="container">
-      <div class="row drinks">
-        <div class="col-xs-12 col-md-6">
-          <h3>Drinks</h3>
-          <h5>Soda</h5>
-          <p>Coca-Cola//Pepsi//Sprite//Lemonade//Fanta Orange//Root Beer//<br>
-          Italian Soda//Lassi//Chinese salt soda water//</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row drinks">
-        <div class="col-xs-12 col-md-6">
-          <h3>Entrees</h3>
-          <h5>Curry Bowl</h5>
-          <p>Specialty Indian soup, with chicken and a pinch of chili sauce.</p>
-        </div>
-      </div>
-    </div>
+
+
+
 
 
   </body>
